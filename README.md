@@ -3,29 +3,29 @@ dependency free element generator(mootools style).
 
 ## Usage
 ```js
-var myElement = new Element('div');
+var myElement = new Elm('div');
 // <div></div>
 
-var myElement = new Element('div.myclass');
+var myElement = new Elm('div.myclass');
 //<div class="myclass"></div>
 
-var myElement = new Element('div.myclass', {'class': 'foo bar'})
+var myElement = new Elm('div.myclass', {'class': 'foo bar'})
 //<div class="myclass foo bar"></div>
 
-var myElement = new Element('div.myclass', {'class': 'foo bar', id: 'lorem'})
+var myElement = new Elm('div.myclass', {'class': 'foo bar', id: 'lorem'})
 //<div class="myclass foo bar" id="lorem"></div>
 
-var myElement = new Element('div.myclass', {id: 'hey', html: '<h1>Headline</h1>', css: {'background': 'green', 'margin-top': '10px'}});
+var myElement = new Elm('div.myclass', {id: 'hey', html: '<h1>Headline</h1>', css: {'background': 'green', 'margin-top': '10px'}});
 //<div class="myclass" id="hey" style="margin-top: 10px; background: green;">
 //<h1>Headline</h1>
 //</div>
 ```
 ###Create element with class "myclass" and append to body
 ```js
-var myElement = new Element('div.myclass', {'class': 'foo bar'}, document.body);
+var myElement = new Elm('div.myclass', {'class': 'foo bar'}, document.body);
 ```
 
 ###now let's create anoter element and append it to .myclass
 ```js
-var myElement = new Element('div.myclass', {'class': 'foo bar'}, '.myclass');
+var myElement = new Elm('div.myclass', {'class': 'foo bar'}, '.myclass');
 ```
