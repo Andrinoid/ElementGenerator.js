@@ -1,4 +1,4 @@
-class Element {
+class Elm {
     //Simple element generator. Mootools style
     //tries to find method for keys in options and run it
     constructor(type, options, parent) {
