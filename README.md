@@ -25,7 +25,7 @@ var myElement = new Element('div.myclass', {id: 'hey', html: '<h1>Headline</h1>'
 var myElement = new Element('div.myclass', {'class': 'foo bar'}, document.body);
 ```
 
-###now lest create anoter element and append it to .myclass
+###now let's create anoter element and append it to .myclass
 ```js
 var myElement = new Element('div.myclass', {'class': 'foo bar'}, '.myclass');
 ```
